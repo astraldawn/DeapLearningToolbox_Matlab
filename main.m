@@ -67,9 +67,9 @@ nn.trParams.momParams.finalMomentum = 0.99;
 nn.trParams.momParams.schedulingType = 1;
 
 %set the epoch where the learning will begin to increase
-nn.trParams.momParams.momentumEpochLowerThres = 10;
+nn.trParams.momParams.momentumEpochLowerThres = 1;
 %set the epoch where the learning will reach its final value (usually 0.9)
-nn.trParams.momParams.momentumEpochUpperThres = 15;
+nn.trParams.momParams.momentumEpochUpperThres = 50;
 
 % set weight constraints
 nn.weightConstraints.weightPenaltyL1 = 0;
