@@ -69,7 +69,9 @@ nn.trParams.momParams.schedulingType = 1;
 %set the epoch where the learning will begin to increase
 nn.trParams.momParams.momentumEpochLowerThres = 1;
 %set the epoch where the learning will reach its final value (usually 0.9)
+
 nn.trParams.momParams.momentumEpochUpperThres = 25;
+
 
 % set weight constraints
 nn.weightConstraints.weightPenaltyL1 = 0;
@@ -90,6 +92,7 @@ nn.dropoutParams.dropoutType = 0;
 % if 1 then early stopping is used
 nn.earlyStopping = 1;
 nn.max_fail = 20;
+
 
 nn.type = type;
 
